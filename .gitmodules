@@ -1,42 +1,56 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
+  url = http://github.com/tpope/vim-fugitive.git
+  ignore = dirty
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = http://github.com/tpope/vim-rails.git
+  ignore = dirty
 [submodule "bundle/The-NERD-tree"]
 	path = bundle/The-NERD-tree
 	url = http://github.com/vim-scripts/The-NERD-tree.git
+  ignore = dirty
 [submodule "bundle/minibufexpl"]
 	path = bundle/minibufexpl
 	url = http://github.com/fholgado/minibufexpl.vim.git
+  ignore = dirty
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = http://github.com/clones/vim-l9.git
+  ignore = dirty
 [submodule "bundle/vim-fuzzyfinder"]
 	path = bundle/vim-fuzzyfinder
 	url = http://github.com/clones/vim-fuzzyfinder.git
+  ignore = dirty
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = http://github.com/tpope/vim-haml.git
+  ignore = dirty
 [submodule "bundle/vim-cucumber"]
 	path = bundle/vim-cucumber
 	url = http://github.com/tpope/vim-cucumber.git
+  ignore = dirty
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = http://github.com/tpope/vim-surround.git
+  ignore = dirty
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = http://github.com/tpope/vim-commentary.git
+  ignore = dirty
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = http://github.com/tpope/vim-endwise.git
+  ignore = dirty
 [submodule "bundle/vim-railscasts"]
 	path = bundle/vim-railscasts
 	url = http://github.com/jgdavey/vim-railscasts.git
+  ignore = dirty
 [submodule "bundle/loremipsum"]
 	path = bundle/loremipsum
 	url = http://github.com/vim-scripts/loremipsum.git
+  ignore = dirty
 [submodule "bundle/vim-supertab"]
 	path = bundle/vim-supertab
 	url = http://github.com/tsaleh/vim-supertab.git
+  ignore = dirty
