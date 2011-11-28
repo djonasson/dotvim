@@ -79,6 +79,9 @@ set hlsearch
 " ignore case while searching
 set ignorecase
 
+" show line numbers
+set number
+
 " Wrap too long lines
 set wrap
 
@@ -195,4 +198,4 @@ map <leader>f :FufTaggedFile<CR>
 map <leader>s :FufTag<CR>
 
 " ack-grep
-let g:ackprg="ack-grep -H --nocolor --nogroup --column" 
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
