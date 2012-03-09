@@ -16,7 +16,7 @@ Install submodules:
     git submodule update
 
 
-# Misc.:
+# Escape Re-binding
 
 It's probably a good idea to re-bind a key to the escape key since it's used
 all the time. You should chose a key that you can reach without moving your
@@ -26,7 +26,7 @@ this means the right popup menu key. It can be done by using xmodmap:
     xmodmap -e 'keycode 117=Escape'
 
 
-# Basic vim usage:
+# Basic vim usage
 
 ## Moving around
     h - move left
