@@ -1,4 +1,6 @@
-Installation:
+# Installation
+
+Clone the repository:
 
     git clone git://github.com/djonasson/dotvim.git ~/.vim
 
@@ -7,27 +9,26 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-Switch to the `~/.vim` directory, and fetch submodules:
+Install submodules:
 
     cd ~/.vim
     git submodule init
     git submodule update
 
 
-Misc.:
+# Misc.:
 
-    It's probably a good idea to re-bind a key to the escape key since it's used
-    all the time. You should chose a key that you can reach without moving your
-    hands from their default position. For me, on my MS Natural Elite keyboard,
-    this means the right popup menu key. It can be done by using xmodmap:
+It's probably a good idea to re-bind a key to the escape key since it's used
+all the time. You should chose a key that you can reach without moving your
+hands from their default position. For me, on my MS Natural Elite keyboard,
+this means the right popup menu key. It can be done by using xmodmap:
 
     xmodmap -e 'keycode 117=Escape'
 
 
-Basic vim usage:
+# Basic vim usage:
 
-    Moving around etc.
-    ==================
+## Moving around
     h - move left
     l - move right
     j - move down
@@ -58,20 +59,13 @@ Basic vim usage:
     # - go to the previous occurance of the word under the cursor
     :N - go to line number N
 
+## Insert, Delete, Copy, etc.
     i - insert mode before current position
     a - insert mode after current position
     o - insert line below current and enter insert mode
     O - insert line above current and enter insert mode
     I - jump to first blank character of current line and switch to insert mode
     A - jumb to last charachter of current line and switch to insert mode
-
-    u - undo
-    Ctrl-r - redo
-
-    v - visual mode (character oriented)
-    V - visual mode (line oriented)
-    Ctrl-v - block visual mode (select rectangles of text)
-    o (while selecting) - moves cursor to other corner of selection
 
     d - delete from cursor to position given by next command (ex. d$)
     dd - delete the current line
@@ -94,10 +88,19 @@ Basic vim usage:
     "ap - paste register "a"
     :registers - show registers
 
+    u - undo
+    Ctrl-r - redo
+
+    v - visual mode (character oriented)
+    V - visual mode (line oriented)
+    Ctrl-v - block visual mode (select rectangles of text)
+    o (while selecting) - moves cursor to other corner of selection
+
     :!command - execute the external command and show the output
     :r!command - execute the external command and insert the output
 
-    Together with the selection commands you can use:
+Together with the selection commands you can use:
+
     iw - inner word
     aw - a word
     iW - inner WORD
@@ -107,13 +110,12 @@ Basic vim usage:
     >> - indent the highlighted text
     << - un-indent the highlighted text
 
-    Make a selection (multiple rows) with Ctrl-v and then hit "I". The text you
-    insert will be inserted for each row when you exit insert mode.
-    
+Make a selection (multiple rows) with Ctrl-v and then hit "I". The text you
+insert will be inserted for each row when you exit insert mode.
+
     With Ctrl-v$ you can add text to the end of lines.
 
-    Search, Replace, Autocomplete 
-    =============================
+## Search, Replace, Autocomplete
     / - search forward
     ? - search backward
     n - repeat search forward
@@ -122,18 +124,16 @@ Basic vim usage:
     :%s/old/new/gc - replace string in whole file, asking for confirmation
     :s/old/new/g - replace string in selection
 
-    Ctrl-p - autocompletion (word, insert mode) 
+    Ctrl-p - autocompletion (word, insert mode)
     Ctrl-x - autocompletion (line, insert mode)
     Ctrl-l - autocompletion (line, insert mode)
 
-    Marks (jump points) 
-    ===================
+## Marks (jump points)
     m{a-Z} - set mark (a-z this file, A-Z available over sessions)
     '{a-Z} - jump to mark (also works with `{a-Z}
     '' - back to position before jump
 
-    Windows, Buffers & Tabs
-    =======================
+## Windows, Buffers & Tabs
     :new - new window
     :q - close current window (close vim if last)
     :sp <filename> - split window horizontally
@@ -153,8 +153,7 @@ Basic vim usage:
     :tabe filename - open filename in a new tab
     gt - switch between tabs
 
-    Macros
-    ======
+## Macros
     q{0-9,a-Z} - start recording macro (stop by hitting q again)
     @a - replay the macro "a"
     @@ - repeat last played macro (ie. keep @ pressed to repeat multiple times)
