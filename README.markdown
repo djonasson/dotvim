@@ -1,3 +1,7 @@
+NOTICE: I'm not maintaining this repository anymore since I've switched vim
+configuration in order to use vundler instead of pathogen. The new repository
+can be found [here](https://github.com/djonasson/djonasson-vim).
+
 # Installation
 
 Clone the repository:
